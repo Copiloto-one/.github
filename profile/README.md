@@ -6,7 +6,7 @@ Carga de trabajo:
 Kanban: https://github.com/orgs/Copiloto-one/projects/1/views/1
 
 
-#Desarrollo
+# Desarrollo
 
 El modelo propuesto para realizar cambios en el codigo esta basado en el flujo `feature-branching`. En este flujo cada ticket en la tabla o `issue` tiene por lo menos un pull-request vinculado para poder considerar el ticket como trabajado. El flujo funciona de la siguiente manera:
 
