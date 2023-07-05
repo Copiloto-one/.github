@@ -1,20 +1,18 @@
 Copiloto
 ========
 
-Links
------
-
+Carga de trabajo:
+-----------------
 Kanban: https://github.com/orgs/Copiloto-one/projects/1/views/1
 
 
-Desarrollo
-----------
+#Desarrollo
 
 El modelo propuesto para realizar cambios en el codigo esta basado en el flujo `feature-branching`. En este flujo cada ticket en la tabla o `issue` tiene por lo menos un pull-request vinculado para poder considerar el ticket como trabajado. El flujo funciona de la siguiente manera:
 
 Para dar un ejemplo, tomemos el siguiente ticket: https://github.com/Copiloto-one/DBO/issues/3. El flujo `git` para empezar a trabajar en el ticket implica lo siguiente:
 
-# Actualizo el `branch` `main` y creo un nuevo `branch` que linkea al ticket en el nombre.
+1) Actualizo el `branch` `main` y creo un nuevo `branch` que linkea al ticket en el nombre.
 ```
   git checkout main
   git pull origin main
@@ -23,7 +21,7 @@ Para dar un ejemplo, tomemos el siguiente ticket: https://github.com/Copiloto-on
 
 Ahora el `HEAD` del repositorio `.git` local apunta a la nueva rama `issue-#3` y es aqui donde vamos a realizar los cambios que se necesitan para el completar el ticket, o parte de el. Una vez tengamos los cambios necesarios pasamos a consolidar los cambios con un `commit`:
 
-# Agrego los cambios al `branch` y hago `commit` en la rama
+2) Agrego los cambios al `branch` y hago `commit` en la rama
 ```
   git add -A
   git commit -m '#3 Agregando documentacion sobre feature-branching'
